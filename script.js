@@ -6,7 +6,7 @@ const products = [
     category: 'car',
     price: 199,
     description: 'Classic racing stripes for sports cars',
-    icon: '🏎️',
+    icon: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imgworldstickets.com%2Fimg-worlds-plan-your-visit%2F&psig=AOvVaw2Hx7Q3v7m58yl2yOPCjp5k&ust=1772864155137000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNiLiuPPipMDFQAAAAAdAAAAABAE',
     rating: 5,
   },
   {
@@ -220,7 +220,7 @@ function renderProducts(filter = 'all') {
     .map(
       (product) => `
         <div class="product-card">
-            <div class="product-image">${product.icon}</div>
+            <div class="product-image"><img scr="${product.icon}"></div>
             <div class="product-info">
                 <div class="product-category">${product.category}</div>
                 <div class="product-name">${product.name}</div>
